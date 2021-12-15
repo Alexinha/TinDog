@@ -1,0 +1,172 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* sections */
+
+.colored-section {
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* title section  */
+
+#title .title-row {
+  text-align: left;
+}
+
+.title-heading {
+  font-weight: 900;
+  /* suggesting weight is important when there are various weights of the same font imported */
+  line-height: 1.5;
+  font-size: 3.5rem;
+  padding-bottom: 8%;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* navigation bar  */
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+/* download button */
+   /* to make the buttons align with the text on the left, the margin on the left will be set 0 */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* title image  */
+   /* so at first the width was set "60%" when it's not absolute positioned,
+   so it's 60% of the parent (column), but then the position was changed into absolute,
+   so the pic kinda picked out from the flow and 60% became 60% of the screen size and its MASSIVE.
+   so it's evetually changed into 25% instead.
+   but the point is, to pick out something like an image, we use "position: absolute" */
+.iphone6 {
+  transform: rotate(25deg);
+  height: auto;
+  position: absolute;
+  width: 25%;
+}
+
+/* features section */
+#features {
+  position: relative;
+  z-index: +1;
+  padding-top: 50px;
+}
+
+                  /* make hover no need to add <a> in html */
+.features-icon:hover {
+  color: #FFBF86;
+}
+
+.features-icon {
+  color: #FF6D6D;
+  padding: 10px 10px;
+}
+
+/* testimonials section */
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* press  */
+
+#press {
+  padding-bottom: 3%;
+}
+
+.press-icon {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+   /* move the padding setting from #testimonials to here
+   so that it only applies to the text and images but leaves out the slides button. */
+.carousel-item {
+  padding: 3% 15%;
+}
+
+/* pricing section */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* call to action section */
+
+#cta {
+  padding: 5% 15%;
+}
+
+.cta-button {
+  margin: 0 2%;
+}
+
+/* footer section */
+
+#footer {
+  padding-top: 3%;
+}
+
+.footer-icon {
+  margin: 9px;
+  padding-bottom: 8px;
+}
+
+/* media query */
+
+@media (max-width: 1028px) {
+  .iphone6 {
+    position: static;
+    width: 60%;
+    transform: rotate(0);
+  }
+
+  .title-row {
+    text-align: center;
+  }
+}
