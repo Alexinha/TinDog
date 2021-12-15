@@ -166,7 +166,9 @@ p {
     transform: rotate(0);
   }
 
-  .title-row {
+      /* this part cant just write .title-row because before there was a #title .title-row specification about centred align,
+      with an ID seems overrun the media query. so here i added the id specification too. */
+  #title .title-row {
     text-align: center;
   }
 }
